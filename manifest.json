@@ -5,7 +5,7 @@
   "description": "Case Creation Helper",
   "permissions": ["storage", "tabs", "contextMenus", "activeTab", "storage"],
   "host_permissions": ["<all_urls>"],
-  "devtools_page": "DevToolPanel/caseMakerPanel.html",
+  "devtools_page": "DevToolPanel/devtools.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

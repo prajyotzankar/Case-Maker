@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="caseMakerPanel.css" />
     <script src="caseMakerPanel.js"></script>
-    <title>Case Creation Helper</title>
+    <title>Case Maker Panel</title>
   </head>
   <body>
-    <h2>Simple Panel Content</h2>
-    <button id="captureData">Capture Data</button>
-    <table id="dataTable">
-      <thead>
-        <tr>
-          <th>Field Name</th>
-          <th>Field Value</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div class="container">
+      <h1>Case Maker Panel</h1>
+
+      <!-- Auto Fill Data Button -->
+
+      <button
+        id="autoFillButton"
+        class="gm-btn gb-cutter"
+        onclick="autoFillData()"
+      >
+        Auto Fill Data
+      </button>
+
+      <!-- Save Data Button -->
+
+      <button id="saveDataButton" class="gm-btn gb-cutter" onclick="saveData()">
+        Save Data
+      </button>
+    </div>
   </body>
 </html>
