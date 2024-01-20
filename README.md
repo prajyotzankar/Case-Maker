@@ -11,7 +11,7 @@
 ## clone or download
 
 ```terminal
-git clone https://github.com/prajyotzankar/password-generator-react.git
+git clone https://github.com/prajyotzankar/Case-Maker.git
 ```
 
 #### Super-Linter Status
@@ -22,7 +22,7 @@ git clone https://github.com/prajyotzankar/password-generator-react.git
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-username/your-extension.gig
+   git clone https://github.com/prajyotzankar/Case-Maker.git
 ```
 2. Open Chrome and navigate to chrome://extensions/.
 3. Enable "Developer mode" in the top-right corner.
