@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Case Creation Helper",
+  "version": "1.0",
+  "description": "Case Creation Helper",
+  "permissions": ["storage", "tabs", "contextMenus", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "devtools_page": "DevToolPanel/caseMakerPanel.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/frontend/content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/backend/background.js"
+  }
+}
