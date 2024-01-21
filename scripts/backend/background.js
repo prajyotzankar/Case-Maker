@@ -21,7 +21,7 @@ const getSaveData = (info, tab) => {
       if (response.action === "dataCaptured") {
         console.log(response.data);
         chrome.storage.local.set({
-          amitdata: [response.data],
+          DCIDA: [response.data],
         });
       }
     }
@@ -29,7 +29,12 @@ const getSaveData = (info, tab) => {
 };
 
 const sendData = (info, tab) => {
-  chrome.storage.local.get(["amitdata"], (result) => {
+  chrome.storage.local.get("DCIDA", (result) => {
+    if (!result) {
+      console.log("No data retrieved");
+      return;
+    }
+    console.log(result);
     chrome.tabs.sendMessage(
       tab.id,
       {
